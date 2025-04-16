@@ -1,0 +1,17 @@
+<h1>postagens</h1>
+{{#if arr_postagens.length}}
+    <ul>
+        {{#each arr_postagens}}
+        <li>
+            <h2>{{titulo}}</h2>
+            <h2>{{conteudo}}</h2>
+        </li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p>nao há postagens</p>
+
+{{/if}}
+
+{{!-- <h1>{{titulo}}</h1>
+<h2>{{conteudo}}</h2> --}}
