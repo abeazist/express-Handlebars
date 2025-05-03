@@ -1,10 +1,12 @@
+
+
 const express = require('express');
 const app = express();
 const port = 8086;
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 
-//configuração do handlebars
+//configuração do handlebars, templates
 app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
@@ -17,7 +19,7 @@ let arr_postagens = [];
 
 
 app.get('/', function(req, res){
-    res.end("oie nanda");
+    res.end("oie bea");
 });
 
 app.get('/formulario', function(req, res){
