@@ -12,13 +12,14 @@ app.set('view engine', 'handlebars');
 app.set('views', './views');
 
 //config do body-parser
-app.use(bodyParser.urlencoded({extend: false}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 let arr_postagens = [];
 
 
 app.get('/', function(req, res){
+    console.log("oi cheguei")
     res.end("oie bea");
 });
 
